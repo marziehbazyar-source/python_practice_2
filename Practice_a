@@ -1,0 +1,14 @@
+>>> family= "bazyar"
+>>> print('f My name is: {name.title()} \t\nMy family : {family.title()}')
+f My name is: {name.title()}
+My family : {family.title()}
+>>> print(f' My name is: {name.title()} \t\nMy family : {family.title()}')
+ My name is: Marzieh
+My family : Bazyar
+>>> print(f' My name : {name.title()} \n\tMy family : {family.title()}')
+ My name : Marzieh
+        My family : Bazyar
+>>> print(f' My name : {name.upper()} \n\tMy family : {family.upper()}')
+ My name : MARZIEH
+        My family : BAZYAR
+>>>
