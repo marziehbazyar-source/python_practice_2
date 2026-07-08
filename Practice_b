@@ -1,0 +1,54 @@
+>>> print("   Afsoon  " )
+   Afsoon
+>>> print("   Afsoon  ".strip() )
+Afsoon
+>>> print("   Afsoon  ".lstrip() )
+Afsoon
+>>> print("Afsoon       " )
+Afsoon
+>>> print("Afsoon, Zoom       " )
+Afsoon, Zoom
+>>> des = '  I\'m good. '
+>>> print(f'{des}')
+  I'm good.
+>>> print(f'{des}.')
+  I'm good. .
+>>> print(f'{des}.'rstrip.())
+  File "<python-input-16>", line 1
+    print(f'{des}.'rstrip.())
+          ^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> print(f'{des.strip()}.')
+I'm good..
+>>> print(f'{des}.')
+  I'm good. .
+>>> print(f'{des.ltrip()}.')
+Traceback (most recent call last):
+  File "<python-input-19>", line 1, in <module>
+    print(f'{des.ltrip()}.')
+             ^^^^^^^^^
+AttributeError: 'str' object has no attribute 'ltrip'. Did you mean: 'lstrip'?
+>>> print(f'{des.lstrip()}.')
+I'm good. .
+>>> print(f'{des.rstrip()}.')
+  I'm good..
+>>> print(f'{des.strip()}.')
+I'm good..
+>>>>>> web_url= 'https://store.ir'
+>>> print(web_url)
+https://store.ir
+>>> print(web_url.removeprefix('https'))
+://store.ir
+>>> print(web_url.removeprefix('https'))
+://store.ir
+>>> print(web_url.removeprefix('https://'))
+store.ir
+>>> print(web_url.removeprefix('ir'))
+https://store.ir
+>>>>>> print(web_url.removeprefix('h'))
+ttps://store.ir
+>>> print(web_url.removeprefix('t'))
+https://store.ir
+>>> print(web_url.removeprefix('ht'))
+tps://store.ir
+>>>
