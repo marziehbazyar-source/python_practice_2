@@ -1,0 +1,82 @@
+>>> s= 'ABCDEF'
+>>> print(s[0])
+A
+>>> print(s[3])
+D
+>>> print(s[-3])
+D
+>>> print(s[-4])
+C
+>>> print(s[1:4])
+BCD
+>>> print(s[::-1])
+FEDCBA
+>>> print(s[:-3])
+ABC
+>>> print(s[:3])
+ABC
+>>> print(s[3:])
+DEF
+>>> n= 41
+>>> s= '%s' %n
+>>> print(s)
+41
+>>> print(type(s))
+<class 'str'>
+>>> s= '{}'.format(n)
+>>> print(s)
+41
+>>> print(type(s))
+<class 'str'>
+>>> # binary sring
+>>> s= "1010"
+>>> num = int(s, 2)
+>>> print(num)
+10
+>>> # hexadecimal strung
+>>> s= "A"
+>>> age= input('لطفا فقط عدد وارد کنید.
+  File "<python-input-84>", line 1
+    age= input('لطفا فقط عدد وارد کنید.
+               ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> age= input('لطفا فقط عدد وارد کنید:')
+لطفا فقط عدد وارد کنید:40
+>>> age= int(age)
+>>> age= input("Enter yourn age:")
+Enter yourn age:
+>>> if age.isdigit()
+  File "<python-input-88>", line 1
+    if age.isdigit()
+                    ^
+SyntaxError: expected ':'
+>>> if age.isdigit():
+...     age= int(age)
+...     print(age)
+... else:
+...     print("Please only enter a number.")
+...
+Please only enter a number.
+>>> forty
+Traceback (most recent call last):
+  File "<python-input-90>", line 1, in <module>
+    forty
+NameError: name 'forty' is not defined
+>>> 40
+40
+>>> a= [1,2,3]
+>>> print(a)
+[1, 2, 3]
+>>> a= list ((1,2,3,'apple', 4,5))
+>>> print(a)
+[1, 2, 3, 'apple', 4, 5]
+>>> a= list ('GFG')
+>>> print(a)
+['G', 'F', 'G']
+>>> a= [5]*7
+>>> print(a)
+[5, 5, 5, 5, 5, 5, 5]
+>>>
+>>> num = int(s,16)
+>>> print(num)
+10
