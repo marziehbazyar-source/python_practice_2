@@ -1,0 +1,48 @@
+>>> message="I'm a student"
+>>> print(message)
+I'm a student
+>>> age= 40
+>>> print(type(age))
+<class 'int'>
+>>> height = 1.63
+>>> print(type(height))
+<class 'float'>
+>>> print(age)
+40
+>>> print(height)
+1.63
+>>> number = complex(3,4)
+>>> number
+(3+4j)
+>>> number = 3+4j
+>>> number
+(3+4j)
+>>> type(number)
+<class 'complex'>
+>>> name= "Marzieh"
+>>> print(name)
+Marzieh
+>>> print(type(name))
+<class 'str'>
+>>> lang= b'Python'
+>>> type(lang)
+<class 'bytes'>
+>>> print(lang[0])
+80
+>>> print(lang[1])
+121
+>>> print(lang)
+b'Python'
+>>> print(lang[0], [1],[2].[3],[4], [5])
+  File "<python-input-54>", line 1
+    print(lang[0], [1],[2].[3],[4], [5])
+                           ^
+SyntaxError: invalid syntax
+>>> print(lang[0], [1],[2],[3],[4], [5])
+80 [1] [2] [3] [4] [5]
+>>> print(lang[0], lang[1],lang[2],lang[3],lang[4], lang[5])
+80 121 116 104 111 110
+>>>>>> is_student = True
+>>> type(is_student)
+<class 'bool'>
+>>>
