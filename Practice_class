@@ -1,0 +1,46 @@
+>>> message= '  learn python in 2026    '
+>>> print(message.strip())
+learn python in 2026
+>>> print(message.upper())
+  LEARN PYTHON IN 2026
+>>> print(message.strip().upper())
+LEARN PYTHON IN 2026
+>>> print(message.replace('python','programming'))
+  learn programming in 2026
+>>> message_1= (message.strip().replace('python','programming'))
+>>> print(len(message_1))
+25
+
+
+>>> number= 75
+>>> binary_str= '101101'
+>>> number_2= bin(number)
+>>> print(number_2)
+0b1001011
+>>> print(number_2.removeprefix('0b'))
+1001011
+>>> print(int(binary_str, 2))
+45
+
+
+>>> x= 17.78
+>>> y= 5.25
+>>> print(int(x))
+17
+>>> print(x//y)
+3.0
+>>> print(x%y)
+2.030000000000001
+>>> print(round(x%y, 2))
+2.03
+>>> print(f'{x%y:.2f}')
+2.03
+
+
+
+>>> z= 3+4j
+>>> print(z.real)
+3.0
+>>> print(z.imag)
+4.0
+>>>
