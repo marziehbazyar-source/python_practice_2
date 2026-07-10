@@ -1,0 +1,49 @@
+>>> fruit= ['apple', 'garlic', 'orange', 'pineapple', 'mango']
+>>> print(type(fruit))
+<class 'list'>
+>>> print(len(fruit))
+5
+>>> print(fruit[1])
+garlic
+>>> print(fruit[-1])
+mango
+>>> print(fruit[3])
+pineapple
+>>> print(fruit[5])
+Traceback (most recent call last):
+  File "<python-input-15>", line 1, in <module>
+    print(fruit[5])
+          ~~~~~^^^
+IndexError: list index out of range
+>>> print(fruit[-3])
+orange
+>>> print(fruit[-3], [4])
+orange [4]
+>>> print(fruit[1:3])
+...
+...
+KeyboardInterrupt
+>>> print(fruit[0:5:2])
+['apple', 'orange', 'mango']
+>>> print(fruit[0:5:3])
+['apple', 'pineapple']
+>>> print(fruit[::3])
+['apple', 'pineapple']
+>>> print(fruit[-3])
+orange
+>>> print(fruit[:9])
+['apple', 'garlic', 'orange', 'pineapple', 'mango']
+>>> print(fruit[9])
+Traceback (most recent call last):
+  File "<python-input-23>", line 1, in <module>
+    print(fruit[9])
+          ~~~~~^^^
+IndexError: list index out of range
+>>> print(fruit[7:9])
+[]
+>>> print(fruit)
+['apple', 'garlic', 'orange', 'pineapple', 'mango']
+>>> print(fruit[3].title())
+Pineapple
+>>> print(fruit[3].upper())
+PINEAPPLE
