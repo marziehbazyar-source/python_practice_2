@@ -1,0 +1,93 @@
+>>> for number in range(1, 21):
+...     print(number)
+...
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+>>> for number in range(1, 21):
+...     print(number, end= "-")
+ numbers = list(range(1, 1000001))
+... print(min(numbers))
+... print(max(numbers))
+... print(sum(numbers))
+...
+1
+1000000
+500000500000
+>>>
+>>> numbers= list(range(1,20, 2))
+... print(numbers)
+...
+[1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+...
+1-2-3-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18-19-20->>>
+numbers = list(range(3,30,3))
+... for number in numbers:
+...     print(number)
+...
+3
+6
+9
+12
+15
+18
+21
+24
+27
+>>> numbers = list(range(3,31,3))
+... for number in numbers:
+...     print(number)
+...
+3
+6
+9
+12
+15
+18
+21
+24
+27
+30
+>>>
+cubes = []
+>>> for number in range(1,11):
+...     cubes.append(number**3)
+... for cube in cubes:
+...     print(cube)
+...
+1
+8
+27
+64
+125
+216
+343
+512
+729
+1000
+>>>
+>>> cubes = [number ** 3 for number in range(1, 11)]
+>>>
+>>>
+>>> cubes = []
+>>> cubes = [number ** 3 for number in range(1, 11)]
+>>> print(cubes)
+[1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
+>>> exit()
