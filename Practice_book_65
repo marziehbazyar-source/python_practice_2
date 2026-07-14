@@ -1,0 +1,78 @@
+ names = ['Ali', 'keyvan', 'Mina', 'Maryam', 'Azadeh', 'zahra', 'Ida', 'sadaf']
+>>> print(names)
+['Ali', 'keyvan', 'Mina', 'Maryam', 'Azadeh', 'zahra', 'Ida', 'sadaf']
+>>> print('The first three items in the list are:',
+... for name in names:
+...     print(name[0:2])
+...
+  File "<python-input-7>", line 1
+    print('The first three items in the list are:',
+         ^
+SyntaxError: '(' was never closed
+>>> print('The first three items in the list are:'),
+... for name in names:
+...     print(name[0:2])
+...
+The first three items in the list are:
+Al
+ke
+Mi
+Ma
+Az
+za
+Id
+sa
+>>> print('The first three items in the list are:'),
+... for name in names:
+...     print(name[:2])
+...
+The first three items in the list are:
+Al
+ke
+Mi
+Ma
+Az
+za
+Id
+sa
+>>> print("The first three items in the list are:")
+...
+... for name in names[:3]:
+...     print(name)
+...
+The first three items in the list are:
+Ali
+keyvan
+Mina
+ print("Three items from the middle of the list are:")
+...
+... for name in names[3:6]:
+...     print(name)
+...
+Three items from the middle of the list are:
+Maryam
+Azadeh
+zahra
+>>> print("The last three items in the list are:")
+...
+... for name in names[-3:]:
+...     print(name)
+...
+The last three items in the list are:
+zahra
+Ida
+sadaf
+my_pizzas = ['pepperoni', 'margherita', 'vegetarian']
+
+friend_pizzas = my_pizzas[:]
+
+my_pizzas.append('hawaiian')
+friend_pizzas.append('cheese')
+
+print("My favorite pizzas are:")
+for pizza in my_pizzas:
+    print(pizza)
+
+print("\nMy friend's favorite pizzas are:")
+for pizza in friend_pizzas:
+    print(pizza)
